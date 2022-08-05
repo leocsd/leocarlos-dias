@@ -1,7 +1,6 @@
 <h1>Hello! Welcome to my Github profile</h1>
 
-- 🔭 I’m currently working on Industrial Automation.
-- 🌱 I’m currently learning Java, JavaScript, HTML5 e CSS3.
+- 🌱 Student Web Development at Kenzie Academy & Electrical Engineering | JavaScript | HTML5 | CSS3 | Java
 - <a href="https://www.linkedin.com/in/leonardocsdias/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
  
 <div style="display: inline_block"><br>
