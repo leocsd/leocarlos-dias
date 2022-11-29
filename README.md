@@ -8,12 +8,12 @@ class SobreMim extends Desenvolvedor {
   [{
     Curso: Desenvolvedor Full Stack,
     Instituição: Kenzie Academy Brasil,
-    Status: cursando
+    Status: cursando,
   },
   {
     Curso: Engenharia Elétrica,
     Instituição: UniFOA,
-    Status: cursando
+    Status: cursando,
   }];
 }
 
