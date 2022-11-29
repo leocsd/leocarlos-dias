@@ -6,14 +6,14 @@ class SobreMim extends Desenvolvedor {
   trabalho  = 'Monitor na Kenzie Academy Brasil';
   estudo    = 
   [{
-    Curso: 'Desenvolvedor Full Stack',
-    Instituição: 'Kenzie Academy Brasil',
-    Status: 'cursando'
+    curso: 'Desenvolvedor Full Stack',
+    instituição: 'Kenzie Academy Brasil',
+    status: 'cursando'
   },
   {
-    Curso: 'Engenharia Elétrica',
-    Instituição: 'UniFOA',
-    Status: 'cursando'
+    curso: 'Engenharia Elétrica',
+    instituição: 'UniFOA',
+    status: 'cursando'
   }];
 }
 
