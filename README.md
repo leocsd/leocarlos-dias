@@ -7,12 +7,12 @@ class SobreMim extends Desenvolvedor {
   estudo    = 
   [{
     Curso: Desenvolvedor Full Stack,
-    Instituição: Kenzie Academy Brasil
+    Instituição: Kenzie Academy Brasil,
     Status: cursando
   },
   {
     Curso: Engenharia Elétrica,
-    Instituição: UniFOA
+    Instituição: UniFOA,
     Status: cursando
   }];
 }
