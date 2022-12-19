@@ -1,7 +1,6 @@
 ```js
-import Desenvolvedor from 'Leo';
 
-class SobreMim extends Desenvolvedor {
+class SobreMim {
   nome      = 'Leonardo Carlos';
   trabalho  = 'Monitor na Kenzie Academy Brasil';
   estudo    = 
@@ -17,7 +16,7 @@ class SobreMim extends Desenvolvedor {
   }];
 }
 
-class Skills extends Desenvolvedor {
+class Habilidades {
   linguagens   = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'];
   bibliotecas  = ['React', 'Styled Components'];
 }
