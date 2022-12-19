@@ -12,7 +12,7 @@ class SobreMim extends Desenvolvedor {
   },
   {
     curso: 'Engenharia Elétrica',
-    instituição: 'UniFOA',
+    instituição: 'UniFOA - Centro Universitário de Volta Redonda',
     status: 'cursando'
   }];
 }
