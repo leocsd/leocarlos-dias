@@ -3,6 +3,7 @@
 class SobreMim {
   nome        = 'Leonardo Carlos';
   trabalho    = 'Monitor na Kenzie Academy Brasil';
+  habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
   estudo      = 
   [{
     curso: 'Desenvolvedor Full Stack',
@@ -14,7 +15,6 @@ class SobreMim {
     instituição: 'UniFOA - Centro Universitário de Volta Redonda',
     status: 'cursando'
   }];
-  habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
 }
 ```
 <div>
