@@ -1,9 +1,9 @@
 ```js
 
 class SobreMim {
-  nome      = 'Leonardo Carlos';
-  trabalho  = 'Monitor na Kenzie Academy Brasil';
-  estudo    = 
+  nome        = 'Leonardo Carlos';
+  trabalho    = 'Monitor na Kenzie Academy Brasil';
+  estudo      = 
   [{
     curso: 'Desenvolvedor Full Stack',
     instituição: 'Kenzie Academy Brasil',
@@ -14,11 +14,7 @@ class SobreMim {
     instituição: 'UniFOA - Centro Universitário de Volta Redonda',
     status: 'cursando'
   }];
-}
-
-class Habilidades {
-  linguagens   = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript'];
-  bibliotecas  = ['React', 'Styled Components'];
+  habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
 }
 ```
 <div>
