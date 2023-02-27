@@ -1,40 +1,40 @@
 ```js
 
-class SobreMim {
+class AboutMe {
   constructor() {
-    this.nome = 'Leonardo Carlos';
-    this.trabalho = 'Monitor na Kenzie Academy Brasil';
-    this.habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
-    this.estudo = [
+    this.name = 'Leonardo Carlos';
+    this.job = 'Monitor at Kenzie Academy Brasil';
+    this.skill = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'Java', 'React'];
+    this.education = [
       {
-        curso: 'Desenvolvedor Full Stack',
-        instituicao: 'Kenzie Academy Brasil',
-        status: 'cursando'
+        course: 'Full Stack Developer',
+        institution: 'Kenzie Academy Brasil',
+        status: 'enrolled'
       },
       {
-        curso: 'Engenharia Elétrica',
-        instituicao: 'UniFOA - Centro Universitário de Volta Redonda',
-        status: 'cursando'
+        course: 'Electrical Engineering',
+        institution: 'UniFOA - Volta Redonda University Center',
+        status: 'enrolled'
       }
     ];
   }
 
-  apresentar() {
-    console.log(`Olá, meu nome é ${this.nome} e atualmente sou ${this.trabalho}.`);
+  introduce() {
+    console.log(`Hello, my name is ${this.name} and I'm currently a ${this.job}.`);
   }
 
-  mostrarHabilidades() {
-    console.log('Minhas habilidades são:');
-    this.habilidades.forEach(habilidade => console.log(`- ${habilidade}`));
+  showSkills() {
+    console.log('My skills are:');
+    this.skills.forEach(skill => console.log(`- ${skill}`));
   }
 
-  mostrarCursos() {
-    console.log('Meus cursos em andamento são:');
-    this.estudo.forEach(curso => console.log(`- ${curso.curso} na instituição ${curso.instituicao} (${curso.status})`));
+  showCourses() {
+    console.log('My current courses are:');
+    this.studies.forEach(course => console.log(`- ${course.course} at ${course.institution} (${course.status})`));
   }
 }
 
-export default SobreMim;
+export default AboutMe;
 ```
 <div>
 <a href="https://www.linkedin.com/in/leonardocsdias/" target="_blank">
