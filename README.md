@@ -1,21 +1,40 @@
 ```js
 
 class SobreMim {
-  nome        = 'Leonardo Carlos';
-  trabalho    = 'Monitor na Kenzie Academy Brasil';
-  habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
-  estudo      = 
-  [{
-    curso: 'Desenvolvedor Full Stack',
-    instituição: 'Kenzie Academy Brasil',
-    status: 'cursando'
-  },
-  {
-    curso: 'Engenharia Elétrica',
-    instituição: 'UniFOA - Centro Universitário de Volta Redonda',
-    status: 'cursando'
-  }];
+  constructor() {
+    this.nome = 'Leonardo Carlos';
+    this.trabalho = 'Monitor na Kenzie Academy Brasil';
+    this.habilidades = ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'NodeJS', 'React'];
+    this.estudo = [
+      {
+        curso: 'Desenvolvedor Full Stack',
+        instituicao: 'Kenzie Academy Brasil',
+        status: 'cursando'
+      },
+      {
+        curso: 'Engenharia Elétrica',
+        instituicao: 'UniFOA - Centro Universitário de Volta Redonda',
+        status: 'cursando'
+      }
+    ];
+  }
+
+  apresentar() {
+    console.log(`Olá, meu nome é ${this.nome} e atualmente sou ${this.trabalho}.`);
+  }
+
+  mostrarHabilidades() {
+    console.log('Minhas habilidades são:');
+    this.habilidades.forEach(habilidade => console.log(`- ${habilidade}`));
+  }
+
+  mostrarCursos() {
+    console.log('Meus cursos em andamento são:');
+    this.estudo.forEach(curso => console.log(`- ${curso.curso} na instituição ${curso.instituicao} (${curso.status})`));
+  }
 }
+
+export default SobreMim;
 ```
 <div>
 <a href="https://www.linkedin.com/in/leonardocsdias/" target="_blank">
