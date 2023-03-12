@@ -4,8 +4,8 @@ class AboutMe {
   constructor() {
     this.name = 'Leonardo Carlos';
     this.job = 'Monitor at Kenzie Academy Brasil';
-    this.skill = ['HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'NodeJS', 'PostgreSQL', 'TypeORM', 'Prisma', 'Java', 'Spring Boot'];
-    this.education = [
+    this.skills = ['HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'NodeJS', 'PostgreSQL', 'TypeORM', 'Prisma', 'Java', 'Spring Boot'];
+    this.educations = [
       {
         course: 'Full Stack Developer',
         institution: 'Kenzie Academy Brasil',
@@ -25,12 +25,12 @@ class AboutMe {
 
   showSkills() {
     console.log('My skills are:');
-    this.skill.forEach(skill => console.log(`- ${skill}`));
+    this.skills.forEach(skill => console.log(`- ${skill}`));
   }
 
   showCourses() {
     console.log('My current courses are:');
-    this.education.forEach(course => console.log(`- ${course.course} at ${course.institution} (${course.status})`));
+    this.educations.forEach(course => console.log(`- ${course.course} at ${course.institution} (${course.status})`));
   }
 }
 
