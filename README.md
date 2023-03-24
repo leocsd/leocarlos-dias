@@ -4,7 +4,8 @@ class AboutMe {
   constructor() {
     this.name = 'Leonardo Carlos';
     this.job = 'Monitor at Kenzie Academy Brasil';
-    this.skills = ['HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'NodeJS', 'PostgreSQL', 'TypeORM', 'Prisma', 'Java', 'Spring Boot'];
+    this.skills = ['HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'NodeJS', 
+                   'PostgreSQL', 'TypeORM', 'Prisma', 'Java', 'Spring Boot'];
     this.educations = [
       {
         course: 'Full Stack Developer',
@@ -48,4 +49,10 @@ export default AboutMe;
 <a href="https://www.codewars.com/users/leocarlos-dias" target="_blank">
   <img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=Codewars&logoColor=white" />
 <a/>
+</div>
+
+<div>
+  <a href="https://github.com/seu-usuário-aqui">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leocarlos-dias&layout=compact&langs_count=7&theme=dracula"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=leocarlos-dias&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
 </div>
