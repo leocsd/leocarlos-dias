@@ -1,61 +1,58 @@
-```js
 
-class AboutMe {
-  constructor() {
-    this.name = 'Leonardo Carlos';
-    this.job = 'Monitor at Kenzie Academy Brasil';
-    this.skills = ['HTML5', 'CSS3', 'React', 'JavaScript', 'TypeScript', 'NodeJS', 
-                   'PostgreSQL', 'TypeORM', 'Prisma', 'Java', 'Spring Boot'];
-    this.educations = [
+```ts
+interface AboutInterface {
+  name: string,
+  job: string,
+  skills: string[],
+  educations: { course: string, institution: string, status: string }[]
+};
+
+class About {
+  constructor(private props: AboutInterface) {
+    Object.assign(props, this);
+  };
+
+  introduce(): string {
+    return `Hello, my name is ${this.props.name} and I'm currently a ${this.props.job}.`;
+  };
+
+  showSkills(): string {
+    const skills: string = this.props.skills.join(", ");
+    return `My skills are:\n${skills}`;
+  };
+
+  showCourses(): string {
+    const courses: string = this.props.educations.map(education => `${education.course} at ${education.institution} (${education.status})`).join(",\n");
+    return `My current courses are:\n${courses}`;
+  };
+};
+
+const me: AboutInterface = {
+    name: "Leonardo Carlos",
+    job: "Monitor at Kenzie Academy Brasil",
+    skills: [
+      "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "NodeJS", 
+      "PostgreSQL", "TypeORM", "Prisma", "Java", "Spring Boot"
+    ],
+    educations: [
       {
-        course: 'Full Stack Developer',
-        institution: 'Kenzie Academy Brasil',
-        status: 'enrolled'
+        course: "Full Stack Developer",
+        institution: "Kenzie Academy Brasil",
+        status: "enrolled"
       },
       {
-        course: 'Electrical Engineering',
-        institution: 'UniFOA - Volta Redonda University Center',
-        status: 'enrolled'
+        course: "Electrical Engineering",
+        institution: "UniFOA - Volta Redonda University Center",
+        status: "enrolled"
       }
-    ];
-  }
-
-  introduce() {
-    console.log(`Hello, my name is ${this.name} and I'm currently a ${this.job}.`);
-  }
-
-  showSkills() {
-    console.log('My skills are:');
-    this.skills.forEach(skill => console.log(`- ${skill}`));
-  }
-
-  showCourses() {
-    console.log('My current courses are:');
-    this.educations.forEach(course => console.log(`- ${course.course} at ${course.institution} (${course.status})`));
-  }
+    ]
 }
 
-export default AboutMe;
+const AboutMe = new About(me);
+
+console.log(`
+${aboutMe.introduce()}\n
+${aboutMe.showSkills()}\n
+${aboutMe.showCourses()}
+`);
 ```
-<div>
-<a href="https://www.linkedin.com/in/leonardocsdias/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-<a/>
-
-<a href="mailto:leonardocsd.developer@gmail.com" target="_blank">
-  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-<a/>
-
-<a href="https://www.codewars.com/users/leocarlos-dias" target="_blank">
-  <img src="https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=Codewars&logoColor=white" />
-<a/>
-</div>
-
-![Snake animation](https://github.com/leocarlos-dias/leocarlos-dias/blob/output/github-contribution-grid-snake.svg)
-
-<div>
-  <a href="https://github.com/leocarlos-dias">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=leocarlos-dias&layout=compact&langs_count=7&theme=transparent"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=leocarlos-dias&show_icons=true&theme=transparent&include_all_commits=true&count_private=true"/>
-</div>
-
