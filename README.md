@@ -22,7 +22,8 @@ class About {
   };
 
   showCourses(): string {
-    const courses: string = this.props.educations.map(education => `${education.course} at ${education.institution} (${education.status})`).join(",\n");
+    const courses: string = this.props.educations.map(education => 
+      `${education.course} at ${education.institution} (${education.status})`).join(",\n");
     return `My current courses are:\n${courses}`;
   };
 };
