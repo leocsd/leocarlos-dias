@@ -7,27 +7,6 @@ interface AboutInterface {
   educations: { course: string, institution: string, status: string }[]
 };
 
-class About {
-  constructor(private props: AboutInterface) {
-    Object.assign(props, this);
-  };
-
-  introduce(): string {
-    return `Hello, my name is ${this.props.name} and I'm currently a ${this.props.job}.`;
-  };
-
-  showSkills(): string {
-    const skills: string = this.props.skills.join(", ");
-    return `My skills are:\n${skills}`;
-  };
-
-  showCourses(): string {
-    const courses: string = this.props.educations.map(education => 
-      `${education.course} at ${education.institution} (${education.status})`).join(",\n");
-    return `My current courses are:\n${courses}`;
-  };
-};
-
 const me: AboutInterface = {
     name: "Leonardo Carlos",
     job: "Monitor at Kenzie Academy Brasil",
@@ -48,6 +27,27 @@ const me: AboutInterface = {
       }
     ]
 }
+
+class About {
+  constructor(private props: AboutInterface) {
+    Object.assign(props, this);
+  };
+
+  introduce(): string {
+    return `Hello, my name is ${this.props.name} and I'm currently a ${this.props.job}.`;
+  };
+
+  showSkills(): string {
+    const skills: string = this.props.skills.join(", ");
+    return `My skills are:\n${skills}`;
+  };
+
+  showCourses(): string {
+    const courses: string = this.props.educations.map(education => 
+      `${education.course} at ${education.institution} (${education.status})`).join(",\n");
+    return `My current courses are:\n${courses}`;
+  };
+};
 
 const AboutMe = new About(me);
 
