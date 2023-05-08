@@ -7,8 +7,6 @@ interface AboutInterface {
     educations: { course: string, institution: string, status: string }[]
 };
 
-
-
 class About {
     constructor(private props: AboutInterface = {
         name: "Leonardo Carlos",
@@ -47,8 +45,6 @@ class About {
         return `My current courses are:\n${courses}`;
     };
 };
-
-
 
 const aboutMe = new About();
 
