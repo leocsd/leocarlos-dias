@@ -30,9 +30,8 @@ const me: IAbout = {
 class About {
     constructor(private props: IAbout) {
         Object.assign(props, this);
-    };
+    }
 };
 
 const aboutMe = new About(me);
-`);
 ```
