@@ -1,14 +1,13 @@
 
 ```ts
-interface AboutInterface {
+interface IAbout {
     name: string,
     job: string,
     skills: string[],
     educations: { course: string, institution: string, status: string }[]
 };
 
-class About {
-    constructor(private props: AboutInterface = {
+const me: IAbout = {
         name: "Leonardo Carlos",
         job: "Monitor at Kenzie Academy Brasil",
         skills: [
@@ -26,31 +25,14 @@ class About {
             institution: "UniFOA - Volta Redonda University Center",
             status: "enrolled"
         }]
-    }) {
+    };
+
+class About {
+    constructor(private props: IAbout) {
         Object.assign(props, this);
-    };
-
-    introduce(): string {
-        return `Hello, my name is ${this.props.name} and I'm currently a ${this.props.job}.`;
-    };
-
-    showSkills(): string {
-        const skills: string = this.props.skills.join(", ");
-        return `My skills are:\n${skills}`;
-    };
-
-    showCourses(): string {
-        const courses: string = this.props.educations.map(education =>
-            `${education.course} at ${education.institution} (${education.status})`).join(",\n");
-        return `My current courses are:\n${courses}`;
     };
 };
 
-const aboutMe = new About();
-
-console.log(`
-${aboutMe.introduce()}\n
-${aboutMe.showSkills()}\n
-${aboutMe.showCourses()}
+const aboutMe = new About(me);
 `);
 ```
