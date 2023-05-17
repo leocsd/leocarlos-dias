@@ -11,8 +11,8 @@ const me: IAbout = {
         name: "Leonardo Carlos",
         job: "Monitor at Kenzie Academy Brasil",
         skills: [
-            "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "NodeJS",
-            "Express.js", "Nest.js", "PostgreSQL", "TypeORM", "Prisma", "Jest",
+            "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "Node.js",
+            "Express.js", "NestJS", "PostgreSQL", "TypeORM", "Prisma", "Jest",
             "Java", "Spring Boot"
         ],
         educations: [{
