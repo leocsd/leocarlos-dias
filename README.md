@@ -13,9 +13,10 @@ const me: AboutProps = {
         name: "Leonardo Carlos",
         job: "Monitor at Kenzie Academy Brasil",
         skills: [
-            "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "Node.js",
-            "Express.js", "NestJS", "PostgreSQL", "TypeORM", "Prisma", "Jest",
-            "Java", "Spring Boot"
+            "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "React", "Next.js",
+            "Node.js", "Express.js", "NestJS", "PostgreSQL", "MongoDB", "SQL", "NoSQL",
+            "TypeORM", "Prisma", "Jest", "Java", "Spring Boot", "PHP", "Laravel", "Docker",
+            "Kafka", "AWS".
         ],
         educations: [{
             course: "Full Stack Developer",
