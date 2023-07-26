@@ -16,12 +16,12 @@ const me: AboutProps = {
             "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "Next.js", "Node.js",
             "Express.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "SQL", "NoSQL",
             "TypeORM", "Prisma", "Jest", "Java", "Spring Boot", "PHP", "Laravel", "Docker",
-            "Kafka", "RESTful", "GraphQL", "AWS".
+            "Kafka", "RESTful", "GraphQL", "AWS"
         ],
         educations: [{
             course: "Full Stack Developer",
             institution: "Kenzie Academy Brasil",
-            status: "enrolled"
+            status: "completed"
         },
         {
             course: "Electrical Engineering",
