@@ -11,7 +11,7 @@ interface AboutProps {
 
 const me: AboutProps = {
         name: "Leonardo Carlos",
-        job: "Monitor at Kenzie Academy Brasil",
+        job: "Web Developer at Universidade de Barra Mansa",
         skills: [
             "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "Next.js", "Node.js",
             "Express.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "SQL", "NoSQL",
