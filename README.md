@@ -19,13 +19,13 @@ const me: AboutProps = {
             "Kafka", "RESTful", "GraphQL", "AWS"
         ],
         educations: [{
-            course: "Full Stack Developer",
-            institution: "Kenzie Academy Brasil",
+            course: "Electrical Engineering",
+            institution: "UniFOA - Volta Redonda University Center",
             status: "completed"
         },
         {
-            course: "Electrical Engineering",
-            institution: "UniFOA - Volta Redonda University Center",
+            course: "Full Stack Developer",
+            institution: "Kenzie Academy Brasil",
             status: "completed"
         }]
 };
