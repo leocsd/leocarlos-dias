@@ -11,7 +11,7 @@ interface AboutProps {
 
 const me: AboutProps = {
         name: "Leonardo Carlos",
-        job: "Software Developer at Embeddo",
+        job: "Software Developer at Embeddo Computação Aplicada",
         skills: [
             "HTML5", "CSS3", "React", "JavaScript", "TypeScript", "Next.js", "Node.js",
             "Express.js", "NestJS", "PostgreSQL", "MongoDB", "Redis", "SQL", "NoSQL",
